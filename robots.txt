@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uzivatel.github.io/spurs-fan-experience/sitemap.xml

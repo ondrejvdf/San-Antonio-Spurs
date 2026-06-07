@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="980" viewBox="0 0 520 980" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder pro mobilní screenshot</title>
+  <desc id="desc">Tmavý obrys telefonu s textem pro budoucí screenshot mobilní verze.</desc>
+  <rect width="520" height="980" fill="#050b13"/>
+  <rect x="65" y="35" width="390" height="910" rx="48" fill="#091421" stroke="#26384b" stroke-width="5"/>
+  <rect x="190" y="62" width="140" height="14" rx="7" fill="#26384b"/>
+  <circle cx="260" cy="875" r="28" fill="none" stroke="#26384b" stroke-width="4"/>
+  <circle cx="260" cy="360" r="66" fill="#ff5a1f"/>
+  <path d="M194 360h132M260 294c-27 32-27 100 0 132M260 294c27 32 27 100 0 132" fill="none" stroke="#07111f" stroke-width="8"/>
+  <text x="260" y="510" fill="#f7f9fc" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">MOBILE SCREENSHOT</text>
+  <text x="260" y="550" fill="#9aa9ba" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Placeholder pro README</text>
+</svg>

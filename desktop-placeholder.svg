@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder pro desktop screenshot</title>
+  <desc id="desc">Tmavá plocha s rámečkem a textem pro budoucí screenshot desktopové verze.</desc>
+  <rect width="1440" height="900" fill="#050b13"/>
+  <rect x="40" y="40" width="1360" height="820" rx="22" fill="#091421" stroke="#26384b" stroke-width="3"/>
+  <circle cx="88" cy="82" r="9" fill="#ff5a1f"/>
+  <circle cx="116" cy="82" r="9" fill="#1d78ff"/>
+  <circle cx="144" cy="82" r="9" fill="#607286"/>
+  <path d="M600 390h240v150H600z" fill="none" stroke="#ff5a1f" stroke-width="8"/>
+  <path d="M680 440l40-25 40 25v50l-40 25-40-25z" fill="#1d78ff"/>
+  <text x="720" y="610" fill="#f7f9fc" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">DESKTOP SCREENSHOT</text>
+  <text x="720" y="655" fill="#9aa9ba" font-family="Arial, sans-serif" font-size="21" text-anchor="middle">Nahraďte po finálním nasazení webu</text>
+</svg>

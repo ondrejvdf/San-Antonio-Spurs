@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="cs" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="./">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="Moderní fanouškovská prezentace San Antonio Spurs: historie, pět titulů, klubové legendy, současná éra a kultura týmu.">
+  <meta name="keywords" content="San Antonio Spurs, Spurs, NBA, Victor Wembanyama, Tim Duncan, fanouškovský web">
+  <meta name="author" content="Student">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://uzivatel.github.io/spurs-fan-experience/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Fanouškovský svět San Antonio Spurs">
+  <meta property="og:description" content="Poznej historii, legendy a kulturu jednoho z nejúspěšnějších klubů moderní NBA.">
+  <meta property="og:url" content="https://uzivatel.github.io/spurs-fan-experience/">
+  <meta property="og:image" content="https://uzivatel.github.io/spurs-fan-experience/spurs-hero.webp">
+  <meta property="og:image:alt" content="Černostříbrná basketbalová aréna připravená na zápas">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fanouškovský svět San Antonio Spurs">
+  <meta name="twitter:description" content="Fanouškovský školní mikroweb o historii, hráčích a kultuře Spurs.">
+  <meta name="twitter:image" content="https://uzivatel.github.io/spurs-fan-experience/spurs-hero.webp">
+
+  <title>Fanouškovský svět San Antonio Spurs</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="spurs-hero.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Fanouškovský svět San Antonio Spurs",
+    "url": "https://uzivatel.github.io/spurs-fan-experience/",
+    "description": "Neoficiální vzdělávací fanouškovská prezentace o San Antonio Spurs.",
+    "inLanguage": ["cs-CZ", "en-US"],
+    "educationalUse": "Školní prezentace",
+    "about": {
+      "@type": "SportsTeam",
+      "name": "San Antonio Spurs",
+      "sport": "Basketball",
+      "location": "San Antonio, Texas"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skip">Přeskočit na hlavní obsah</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" data-label-key="brandHome" aria-label="Spurs fanouškovský web, úvod">
+        <span class="brand-symbol" aria-hidden="true">S</span>
+        <span>SPURS<span class="silver">/</span>FAN</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-label-key="openMenu" aria-label="Otevřít navigaci">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" data-label-key="mainNav" aria-label="Hlavní navigace">
+        <a href="#identity" data-i18n="navTeam">Tým</a>
+        <a href="#history" data-i18n="navHistory">Historie</a>
+        <a href="#legends" data-i18n="navLegends">Legendy</a>
+        <a href="#culture" data-i18n="navCulture">Kultura</a>
+        <a href="#faq" data-i18n="navFaq">Otázky</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="button button-small nav-cta" href="#identity" data-i18n="explore">Poznej Spurs</a>
+        <button class="settings-toggle" type="button" aria-expanded="false" aria-controls="settings-panel" data-label-key="openSettings" aria-label="Otevřít nastavení">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.83 2.83-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21h-4v-.1A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06-2.83-2.83.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3v-4h.1A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.83-2.83.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3h4v.1A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.83 2.83-.06.06A1.7 1.7 0 0 0 19.4 9c.16.36.4.7.7.94.3.24.7.38 1.1.4h.1v4h-.1a1.7 1.7 0 0 0-1.8.66Z"/></svg>
+        </button>
+      </div>
+
+      <aside class="settings-panel" id="settings-panel" aria-labelledby="settings-title" hidden>
+        <div class="settings-head">
+          <h2 id="settings-title" data-i18n="settings">Nastavení</h2>
+          <button class="settings-close" type="button" data-label-key="closeSettings" aria-label="Zavřít nastavení">×</button>
+        </div>
+        <div class="setting-row">
+          <div><strong data-i18n="appearance">Vzhled</strong><span data-i18n="appearanceHelp">Světlý nebo tmavý režim</span></div>
+          <button class="theme-toggle" type="button" role="switch" aria-checked="false" data-label-key="themeToggle" aria-label="Přepnout barevný režim">
+            <span aria-hidden="true">☾</span><i></i><span aria-hidden="true">☀</span>
+          </button>
+        </div>
+        <div class="setting-row">
+          <div><strong data-i18n="language">Jazyk</strong><span data-i18n="languageHelp">Jazyk obsahu stránky</span></div>
+          <div class="language-switch" role="group" data-label-key="languageGroup" aria-label="Výběr jazyka">
+            <button type="button" data-lang="cs" aria-pressed="true">CZ</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" data-label-key="heroImage" aria-label="Černostříbrná basketbalová aréna s míčem na palubovce"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow"><span data-i18n="heroKicker">Jiní než ostatní</span> <span data-i18n="fanProject">Fanouškovský školní mikroweb</span></p>
+        <h1 id="hero-title">San Antonio<br><em>Spurs</em></h1>
+        <p class="hero-slogan" data-i18n="heroSlogan">Tým na prvním místě. Vždy.</p>
+        <p class="hero-lead" data-i18n="heroLead">Pět titulů, generace legend a basketbalová kultura postavená na důvěře, disciplíně a chytré týmové hře.</p>
+        <div class="hero-actions">
+          <a class="button" href="#identity"><span data-i18n="explore">Poznej Spurs</span><span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#history"><span class="play-icon" aria-hidden="true">▶</span><span data-i18n="discoverHistory">Poznej historii</span></a>
+        </div>
+      </div>
+      <div class="hero-stats" data-label-key="clubStats" aria-label="Základní klubové údaje">
+        <div><strong data-counter="1967" data-counter-start="1900">1967</strong><span data-i18n="founded">založení organizace</span></div>
+        <div><strong data-counter="5" data-counter-suffix="×">5×</strong><span data-i18n="championships">šampion NBA</span></div>
+        <div><strong data-counter="210">210</strong><span data-i18n="areaCode">telefonní předvolba San Antonia</span></div>
+      </div>
+    </section>
+
+    <section class="section identity-section" id="identity" aria-labelledby="identity-title">
+      <div class="container identity-grid">
+        <div class="section-copy reveal">
+          <p class="eyebrow" data-i18n="identityKicker">Stříbrná a černá</p>
+          <h2 id="identity-title"><span data-i18n="identityTitleA">Více než</span> <em data-i18n="identityTitleB">basketbal</em></h2>
+          <p data-i18n="identityText1">Spurs reprezentují San Antonio od roku 1973. Klub si vybudoval pověst organizace, která dává tým nad jednotlivce a dlouhodobou práci nad rychlá řešení.</p>
+          <p data-i18n="identityText2">Černá, bílá a stříbrná nejsou jen barvy. Vyjadřují jednoduchost, soustředění a profesionální identitu týmu.</p>
+          <div class="quote"><span aria-hidden="true">“</span><blockquote data-i18n="identityQuote">Dobrá přihrávka vytváří další dobrou přihrávku.</blockquote></div>
+        </div>
+        <div class="identity-mark reveal" aria-hidden="true">
+          <span class="giant-s">S</span>
+          <div class="coordinates"><strong>29.4241° N</strong><span>San Antonio, Texas</span></div>
+          <div class="court-lines"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section titles-section" aria-labelledby="titles-title">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><p class="eyebrow" data-i18n="titlesKicker">Mistrovský standard</p><h2 id="titles-title"><span data-i18n="titlesTitleA">Pětkrát na</span> <em data-i18n="titlesTitleB">vrcholu</em></h2></div>
+          <p data-i18n="titlesIntro">Každý titul patří do jiné kapitoly, ale všechny spojuje stejná DNA: obrana, trpělivost a týmová odpovědnost.</p>
+        </div>
+        <ol class="title-years reveal" aria-label="Mistrovské roky San Antonio Spurs">
+          <li><strong>1999</strong><span data-i18n="title1999">První titul</span></li>
+          <li><strong>2003</strong><span data-i18n="title2003">Nová éra</span></li>
+          <li><strong>2005</strong><span data-i18n="title2005">Sedm zápasů</span></li>
+          <li><strong>2007</strong><span data-i18n="title2007">Dominantní cesta</span></li>
+          <li class="featured"><strong>2014</strong><span data-i18n="title2014">Krásná hra</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section history-section" id="history" aria-labelledby="history-title">
+      <div class="container history-grid">
+        <div class="history-intro reveal">
+          <p class="eyebrow" data-i18n="historyKicker">Od ABA k pěti prstenům</p>
+          <h2 id="history-title"><span data-i18n="historyTitleA">Historie, která</span> <em data-i18n="historyTitleB">drží pohromadě</em></h2>
+          <p data-i18n="historyIntro">Od příchodu do San Antonia přes první titul až po basketbalovou lekci z roku 2014. Spurs rostli díky kontinuitě a jasné klubové filozofii.</p>
+        </div>
+        <ol class="timeline reveal">
+          <li><time>1973</time><div><h3 data-i18n="history1973Title">Příchod do San Antonia</h3><p data-i18n="history1973Text">Dallas Chaparrals se stěhují a vzniká značka San Antonio Spurs.</p></div></li>
+          <li><time>1976</time><div><h3 data-i18n="history1976Title">Vstup do NBA</h3><p data-i18n="history1976Text">Spurs se spolu s dalšími kluby ABA připojují k NBA.</p></div></li>
+          <li><time>1997</time><div><h3 data-i18n="history1997Title">Tim Duncan</h3><p data-i18n="history1997Text">První volba draftu mění budoucnost celé organizace.</p></div></li>
+          <li><time>1999</time><div><h3 data-i18n="history1999Title">První prsten</h3><p data-i18n="history1999Text">San Antonio získává první titul a potvrzuje sílu podkošových dvojčat.</p></div></li>
+          <li><time>2014</time><div><h3 data-i18n="history2014Title">Krásná hra</h3><p data-i18n="history2014Text">Pohyb míče a týmová souhra vrcholí pátým mistrovským titulem.</p></div></li>
+          <li><time>2023</time><div><h3 data-i18n="history2023Title">Nová kapitola</h3><p data-i18n="history2023Text">Victor Wembanyama přichází jako první volba draftu.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section legends-section" id="legends" aria-labelledby="legends-title">
+      <div class="container">
+        <div class="section-heading center-heading reveal">
+          <p class="eyebrow" data-i18n="legendsKicker">Velká trojka</p>
+          <h2 id="legends-title"><span data-i18n="legendsTitleA">Legendy jedné</span> <em data-i18n="legendsTitleB">éry</em></h2>
+          <p data-i18n="legendsIntro">Tři odlišné basketbalové osobnosti, které se doplňovaly téměř dvě desetiletí.</p>
+        </div>
+        <div class="legend-grid">
+          <article class="legend-card reveal">
+            <!--span class="jersey">21</span><div class="player-art player-21" aria-hidden="true"></div>-->
+            <span class="jersey">21</span>
+
+<img
+    src="tim-duncan.png"
+    alt="Tim Duncan"
+    class="legend-photo"
+/>
+            <div class="legend-copy"><span data-i18n="duncanPosition">silové křídlo / pivot</span><h3>Tim Duncan</h3><p data-i18n="duncanText">Klidný lídr, základ obrany a tvář pěti mistrovských týmů.</p><strong data-i18n="duncanTag">Velký základ</strong></div>
+          </article>
+          <article class="legend-card reveal">
+            <span class="jersey">9</span><img
+  src="tony-parker.png"
+  alt="Tony Parker"
+  class="legend-photo"
+/>
+            <div class="legend-copy"><span data-i18n="parkerPosition">rozehrávač</span><h3>Tony Parker</h3><p data-i18n="parkerText">Rychlost, průniky do vymezeného území a kontrola tempa.</p><strong data-i18n="parkerTag">Nejužitečnější hráč finále 2007</strong></div>
+          </article>
+          <article class="legend-card reveal">
+            <span class="jersey">20</span><!--<div class="player-art player-20" aria-hidden="true"></div>-->
+            <img
+  src="manu-ginobili.png"
+  alt="Manu Ginobili"
+  class="legend-photo"
+/>
+            <div class="legend-copy"><span data-i18n="manuPosition">střílející rozehrávač</span><h3>Manu Ginóbili</h3><p data-i18n="manuText">Kreativita, odvaha a energie hráče, který přijal roli šestého muže.</p><strong data-i18n="manuTag">Nebojácný soupeř</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section future-section" aria-labelledby="future-title">
+      <div class="container future-grid">
+        <div class="future-visual reveal">
+          <span class="future-number">1</span>
+          <div class="orbit" aria-hidden="true"></div>
+          <img src="victor-future.png" alt="Victor Wembanyama v dresu San Antonio Spurs" class="future-photo" width="1141" height="796" loading="lazy" decoding="async">
+        </div>
+        <div class="future-copy reveal">
+          <p class="eyebrow" data-i18n="futureKicker">Další kapitola</p>
+          <h2 id="future-title"><span data-i18n="futureTitleA">Budoucnost má</span> <em data-i18n="futureTitleB">číslo 1</em></h2>
+          <h3>Victor Wembanyama <span data-i18n="futureRole">pivot / křídlo</span></h3>
+          <p data-i18n="futureText">Jednička draftu 2023 přinesla do San Antonia mimořádnou kombinaci výšky, pohybu, střelby a obranného instinktu. Je symbolem nové éry, která navazuje na týmové hodnoty Spurs.</p>
+          <div class="trait-grid">
+            <div><span aria-hidden="true">↟</span><strong data-i18n="traitReach">Dosah</strong><small data-i18n="traitReachText">Ochrana koše</small></div>
+            <div><span aria-hidden="true">◎</span><strong data-i18n="traitSkill">Dovednost</strong><small data-i18n="traitSkillText">Hra z perimetru</small></div>
+            <div><span aria-hidden="true">◇</span><strong data-i18n="traitVision">Vize</strong><small data-i18n="traitVisionText">Čtení hry</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section height-section" id="height-compare" aria-labelledby="height-title">
+      <div class="container">
+        <div class="section-heading center-heading reveal">
+          <p class="eyebrow" data-i18n="heightKicker">Jak vysoký je Wemby?</p>
+          <h2 id="height-title"><span data-i18n="heightTitleA">Porovnej svou</span> <em data-i18n="heightTitleB">výšku</em></h2>
+          <p class="wemby-height">Victor Wembanyama: <strong data-i18n="wembyHeight">224 cm / 7 stop 4 palce</strong></p>
+          <p data-i18n="heightIntro">Zadej svou výšku a podívej se na skutečný poměr vedle stylizované postavy vysokého basketbalisty.</p>
+        </div>
+
+        <div class="height-tool reveal">
+          <form class="height-form" id="height-form">
+            <div class="height-input-wrap">
+              <label for="height-input" data-i18n="heightLabel">Vaše výška</label>
+              <div class="height-input-row">
+                <input id="height-input" name="height" type="number" inputmode="decimal" min="80" max="250" step="1" value="175" aria-describedby="height-help height-error">
+                <div class="unit-switch" role="group" data-label-key="unitGroup" aria-label="Výběr jednotky výšky">
+                  <button type="button" data-unit="cm" data-i18n="unitCm" aria-pressed="true">cm</button>
+                  <button type="button" data-unit="in" data-i18n="unitInch" aria-pressed="false">palce</button>
+                </div>
+              </div>
+              <small id="height-help" data-i18n="heightHelp">Povolený rozsah: 80–250 cm.</small>
+              <span class="height-error" id="height-error" role="alert" aria-live="polite"></span>
+            </div>
+          </form>
+
+          <div class="height-stage" data-label-key="heightVisual" aria-label="Vizuální porovnání výšky">
+            <div class="height-grid-lines" aria-hidden="true"></div>
+            <div class="height-person wemby-person">
+              <div class="height-value"><strong>Victor Wembanyama</strong><span data-i18n="wembyHeightShort">224 cm / 7 stop 4 palce</span></div>
+              <div class="wemby-photo-wrap">
+                <img class="wemby-photo" src="wembanyama-transparent.png" alt="Victor Wembanyama stojící zpříma v černém dresu Spurs s basketbalovým míčem" data-alt-key="wembyPhotoAlt" width="1023" height="1537" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="height-person user-person">
+              <div class="height-value" id="user-height-label" aria-live="polite"><strong data-i18n="you">Vy:</strong><span>175 cm / 68,9 palce</span></div>
+              <svg class="user-figure" role="img" data-label-key="userSilhouette" aria-label="Moderní realistická sportovní silueta uživatele" viewBox="0 0 220 800" preserveAspectRatio="xMidYMax meet">
+                <defs>
+                  <linearGradient id="user-silhouette-gradient" x1="0.12" y1="0" x2="0.88" y2="1">
+                    <stop offset="0" stop-color="#d3f4f4"/>
+                    <stop offset="0.48" stop-color="#78cbd0"/>
+                    <stop offset="1" stop-color="#3795a7"/>
+                  </linearGradient>
+                  <linearGradient id="user-silhouette-shadow" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0" stop-color="#286d7a" stop-opacity=".48"/>
+                    <stop offset=".55" stop-color="#ffffff" stop-opacity=".04"/>
+                    <stop offset="1" stop-color="#173f49" stop-opacity=".42"/>
+                  </linearGradient>
+                </defs>
+                <!-- Hlava je součástí organického tvaru, nikoli samostatný kruh. -->
+                <path class="user-figure-shape" d="M110 0C84 0 70 18 72 47c1 23 9 42 24 52l-1 24c4 9 9 13 15 13s11-4 15-13l-1-24c15-10 23-29 24-52C150 18 136 0 110 0Z"/>
+                <!-- Přirozená ramena, užší pas a atletický, netrojúhelníkový trup. -->
+                <path class="user-figure-shape" d="M94 116c-12 7-25 11-43 17-18 6-28 18-31 39-4 30 5 74 13 108 6 28 8 57 10 88 2 31 16 48 39 54 18 5 38 5 56 0 23-6 37-23 39-54 2-31 4-60 10-88 8-34 17-78 13-108-3-21-13-33-31-39-18-6-31-10-43-17-4 14-9 22-16 22s-12-8-16-22Z"/>
+                <!-- Paže mají zřetelné nadloktí, loket, předloktí a dlaň. -->
+                <path class="user-figure-shape" d="M51 134c-17 4-26 16-29 35-5 36-9 77-12 116-2 26 0 43 8 49 8 7 18 2 22-11 6-20 6-46 9-70 4-35 12-67 17-91 3-15-2-25-15-28Zm-32 190c-9-1-15 8-17 24-4 31-4 66-3 97 1 18 7 28 16 29 9 1 15-8 17-24 3-27 8-56 12-83 3-21-5-41-25-43Zm-4 143c-8 0-12 8-12 19l1 22c1 14 6 22 14 21 8-1 11-9 11-21l-1-22c-1-12-5-19-13-19ZM169 134c17 4 26 16 29 35 5 36 9 77 12 116 2 26 0 43-8 49-8 7-18 2-22-11-6-20-6-46-9-70-4-35-12-67-17-91-3-15 2-25 15-28Zm32 190c9-1 15 8 17 24 4 31 4 66 3 97-1 18-7 28-16 29-9 1-15-8-17-24-3-27-8-56-12-83-3-21 5-41 25-43Zm4 143c8 0 12 8 12 19l-1 22c-1 14-6 22-14 21-8-1-11-9-11-21l1-22c1-12 5-19 13-19Z"/>
+                <!-- Dlouhé, přirozeně tvarované nohy a chodidla končící přesně na základní linii. -->
+                <path class="user-figure-shape" d="M47 399c2 60 6 119 9 174 3 65 5 126 9 180 1 17 10 27 23 27 14 0 22-11 23-28l3-197 7 197c1 17 9 28 23 28 13 0 22-10 23-27 4-54 6-115 9-180 3-55 7-114 9-174-19 13-41 18-68 18-28 0-51-5-70-18Z"/>
+                <path class="user-figure-shape" d="M65 744c-6 14-15 30-18 41-2 9 4 15 17 15h42c10 0 14-5 10-12-5-10-17-20-28-34l-23-10Zm90 0c6 14 15 30 18 41 2 9-4 15-17 15h-42c-10 0-14-5-10-12 5-10 17-20 28-34l23-10Z"/>
+                <path class="user-figure-shade" d="M110 0c17 4 25 21 23 47-1 24-9 43-23 52v701h46c13 0 19-6 17-15-3-11-12-27-18-41 7-110 10-225 17-345 7-4 12-9 16-16-4 22-8 45-11 67-2 16 4 25 13 24l2-1 4 35c0 12 3 20 11 21 8 1 13-7 14-21l1-22c0-8-2-14-6-17 5-5 8-13 9-24 1-31 1-66-3-97-2-13-7-22-14-24 5-7 6-23 4-39-3-39-7-80-12-116-3-19-12-31-29-35-17-6-30-10-43-17-1 3-2 6-3 8l1-25c15-10 23-29 24-52C150 18 136 0 110 0Z"/>
+              </svg>
+              <div class="user-height-guide" aria-hidden="true"><span data-i18n="heightGuide">Tvoje výška</span></div>
+            </div>
+            <div class="ground-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="height-results" aria-live="polite">
+            <p id="height-difference">Victor je o 49 cm vyšší.</p>
+            <p id="height-percentage">Jsi 78,1 % Victorovy výšky.</p>
+          </div>
+          <p class="height-note" data-i18n="heightNote">Siluety mají společnou základní čáru a jejich výška se počítá poměrem k 224 cm. Jde o stylizaci, nikoli anatomický model.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section culture-section" id="culture" aria-labelledby="culture-title">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><p class="eyebrow" data-i18n="cultureKicker">Proč Spurs?</p><h2 id="culture-title"><span data-i18n="cultureTitleA">Kultura před</span> <em data-i18n="cultureTitleB">ego</em></h2></div>
+          <p data-i18n="cultureIntro">Úspěch Spurs není postavený na jediné hvězdě. Vychází ze způsobu, jakým organizace přemýšlí, vybírá hráče a buduje vztah s městem.</p>
+        </div>
+        <div class="culture-grid">
+          <article class="culture-card reveal"><span>01</span><h3 data-i18n="culture1Title">Tým na prvním místě</h3><p data-i18n="culture1Text">Míč se pohybuje rychleji než hráč. Správné rozhodnutí má přednost před osobní statistikou.</p></article>
+          <article class="culture-card reveal"><span>02</span><h3 data-i18n="culture2Title">Kontinuita</h3><p data-i18n="culture2Text">Stabilní hodnoty umožnily různým generacím navazovat na stejný basketbalový základ.</p></article>
+          <article class="culture-card reveal"><span>03</span><h3 data-i18n="culture3Title">Globální pohled</h3><p data-i18n="culture3Text">Spurs dlouhodobě hledají talent a inspiraci daleko za hranicemi USA.</p></article>
+          <article class="culture-card reveal"><span>04</span><h3 data-i18n="culture4Title">San Antonio</h3><p data-i18n="culture4Text">Klub a město sdílejí hrdost, komunitu a nezaměnitelnou identitu oblasti 210.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading center-heading reveal">
+          <p class="eyebrow" data-i18n="galleryKicker">Černostříbrná atmosféra</p>
+          <h2 id="gallery-title"><span data-i18n="galleryTitleA">Domovská</span> <em data-i18n="galleryTitleB">energie</em></h2>
+        </div>
+        <div class="gallery-grid reveal">
+          <figure class="gallery-main">
+            <img src="spurs-hero.webp" data-alt-key="galleryArenaAlt" alt="Černostříbrná basketbalová aréna před zápasem" width="1536" height="614" loading="lazy" decoding="async">
+            <figcaption><strong data-i18n="galleryArenaTitle">Zápasový večer</strong><span data-i18n="galleryArenaText">Světla, palubovka, oblast 210</span></figcaption>
+          </figure>
+          <figure class="gallery-detail silver-ball">
+            <div role="img" data-label-key="silverBallAlt" aria-label="Stylizovaný stříbrný basketbalový míč"></div>
+            <figcaption><strong data-i18n="galleryDetailTitle">Stříbrný standard</strong><span data-i18n="galleryDetailText">Jednoduchost s charakterem</span></figcaption>
+          </figure>
+          <figure class="gallery-detail five-rings">
+            <div role="img" data-label-key="fiveTitlesAlt" aria-label="Pět abstraktních symbolů mistrovských titulů"><i></i><i></i><i></i><i></i><i></i></div>
+            <figcaption><strong data-i18n="galleryRingsTitle">Pět mistrovských titulů</strong><span>1999 · 2003 · 2005 · 2007 · 2014</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facts-section" aria-labelledby="facts-title">
+      <div class="container">
+        <div class="section-heading center-heading reveal">
+          <p class="eyebrow" data-i18n="factsKicker">Věděli jste?</p>
+          <h2 id="facts-title"><span data-i18n="factsTitleA">Spurs v</span> <em data-i18n="factsTitleB">číslech</em></h2>
+        </div>
+        <div class="facts-grid">
+          <article class="fact reveal"><strong>22</strong><h3 data-i18n="fact1Title">sezon v řadě</h3><p data-i18n="fact1Text">Série účastí v play-off v letech 1998–2019 vyrovnala rekord NBA.</p></article>
+          <article class="fact reveal"><strong>3</strong><h3 data-i18n="fact2Title">země Velké trojky</h3><p data-i18n="fact2Text">Duncan, Parker a Ginóbili reprezentovali Americké Panenské ostrovy, Francii a Argentinu.</p></article>
+          <article class="fact reveal"><strong>2</strong><h3 data-i18n="fact3Title">podkošová dvojčata</h3><p data-i18n="fact3Text">David Robinson a Tim Duncan vytvořili jednu z nejslavnějších podkošových dvojic.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="faqKicker">Rychlé odpovědi</p>
+          <h2 id="faq-title"><span data-i18n="faqTitleA">Často kladené</span> <em data-i18n="faqTitleB">otázky</em></h2>
+          <p data-i18n="faqIntro">Základní fakta pro nové fanoušky černé a stříbrné.</p>
+        </div>
+        <div class="accordion reveal">
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="true" aria-controls="answer-1" id="question-1"><span data-i18n="faq1Q">Kolik titulů Spurs vyhráli?</span><i aria-hidden="true">−</i></button></h3>
+            <div class="faq-answer" id="answer-1" role="region" aria-labelledby="question-1"><p data-i18n="faq1A">San Antonio získalo pět titulů NBA: v letech 1999, 2003, 2005, 2007 a 2014.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="answer-2" id="question-2"><span data-i18n="faq2Q">Kdo patří mezi největší legendy klubu?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="faq-answer" id="answer-2" role="region" aria-labelledby="question-2" hidden><p data-i18n="faq2A">Mezi nejvýraznější jména patří Tim Duncan, David Robinson, Manu Ginóbili, Tony Parker a George Gervin.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="answer-3" id="question-3"><span data-i18n="faq3Q">Co znamená „Krásná hra“?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="faq-answer" id="answer-3" role="region" aria-labelledby="question-3" hidden><p data-i18n="faq3A">Jde o označení týmového stylu založeného na rychlém pohybu míče, prostoru, chytrých rozhodnutích a hledání nejlepší střely.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" aria-expanded="false" aria-controls="answer-4" id="question-4"><span data-i18n="faq4Q">Je tento web oficiální?</span><i aria-hidden="true">+</i></button></h3>
+            <div class="faq-answer" id="answer-4" role="region" aria-labelledby="question-4" hidden><p data-i18n="faq4A">Ne. Jde o nekomerční školní fanouškovský projekt bez oficiálního spojení s NBA nebo San Antonio Spurs.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container cta-content reveal">
+        <p class="eyebrow" data-i18n="ctaKicker">Do toho, Spurs!</p>
+        <h2 id="cta-title"><span data-i18n="ctaTitleA">Staň se součástí</span> <em data-i18n="ctaTitleB">příběhu</em></h2>
+        <p data-i18n="ctaText">Objev tým, který ukázal, že dlouhodobý úspěch začíná důvěrou, charakterem a ochotou sdílet míč.</p>
+        <a class="button" href="#identity"><span data-i18n="explore">Poznej Spurs</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top" data-label-key="brandBack" aria-label="Spurs fanouškovský web, zpět na začátek"><span class="brand-symbol" aria-hidden="true">S</span><span>SPURS<span class="silver">/</span>FAN</span></a>
+        <p data-i18n="footerDisclaimer">Neoficiální vzdělávací fanouškovský projekt. Není spojen s NBA ani San Antonio Spurs.</p>
+      </div>
+      <nav data-label-key="footerNav" aria-label="Navigace v zápatí"><strong data-i18n="footerExplore">Prozkoumat</strong><a href="#history" data-i18n="navHistory">Historie</a><a href="#legends" data-i18n="navLegends">Legendy</a><a href="#culture" data-i18n="navCulture">Kultura</a></nav>
+      <div><strong data-i18n="footerProject">Projekt</strong><a href="README.md" data-i18n="documentation">Dokumentace</a><span>HTML · CSS · JavaScript</span><span>2026</span></div>
+    </div>
+    <div class="container footer-bottom"><span data-i18n="schoolProject">Školní webová prezentace</span><span data-i18n="footerSlogan">Stříbrná. Černá. Společně.</span></div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-label-key="backTop" aria-label="Zpět nahoru" title="Zpět nahoru">↑</button>
+</body>
+</html>
